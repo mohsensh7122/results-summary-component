@@ -1,11 +1,256 @@
 /**** Colors ****/
 /**** Fonts ****/
+* {
+  box-sizing: border-box;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  margin: 0;
+}
+
+.component-card {
+  width: 350px;
+  height: 700px;
+  margin: 0px auto;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .component-card {
+    display: flex;
+    width: 800px;
+    height: 100%;
+    margin: 100px auto;
+  }
+}
+.component-card-purple {
+  margin-top: 0;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+@media screen and (min-width: 768px) {
+  .component-card-purple {
+    height: 500px;
+    border-radius: 30px;
+  }
+}
+.component-card-purple .result-circle {
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(180deg, hsl(256, 72%, 46%), hsl(241, 81%, 54%));
+  border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+  .component-card-purple .result-circle {
+    padding-top: 40px;
+    width: 150px;
+    height: 150px;
+    margin-top: 40px;
+  }
+}
+.component-card-purple .result-circle .score {
+  padding-top: 0;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.component-card-purple .result-circle .score-of {
+  margin-top: 5px;
+}
+.component-card-purple .score-description {
+  font-size: 14px;
+  padding: 0 30px;
+}
+@media screen and (min-width: 768px) {
+  .component-card-purple .score-description {
+    margin-top: 40px;
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+.component-card-purple .lavender {
+  color: hsl(241, 100%, 89%);
+}
+@media screen and (min-width: 768px) {
+  .component-card-purple .score-great {
+    margin-top: 40px;
+    font-size: 30px;
+  }
+}
+.component-card-purple .white-text {
+  color: hsl(0, 0%, 100%);
+}
+.component-card-purple p:first-of-type {
+  margin-top: 0;
+  padding-top: 16px;
+}
+.component-card-summary {
+  padding: 10px;
+  margin-top: 0;
+  width: 100%;
+  height: 400px;
+}
+@media screen and (max-width: 768px) {
+  .component-card-summary {
+    box-shadow: 0px 20px 23px -10px #000000;
+    position: relative;
+    top: -38px;
+    padding-top: 38px;
+    height: 450px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .component-card-summary {
+    height: 500px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 10px 8px 15px -8px #000000;
+    position: relative;
+    left: -38px;
+    padding-left: 38px;
+  }
+}
+.component-card-summary h2 {
+  margin-top: 20px;
+  margin-left: 32px;
+}
+@media screen and (min-width: 768px) {
+  .component-card-summary h2 {
+    margin-bottom: 30px;
+  }
+}
+.component-card-summary .svg {
+  width: 20px;
+  margin-top: 6px;
+  margin-right: 10px;
+}
+.component-card-summary .reaction {
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto 15px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: snow;
+}
+@media screen and (min-width: 768px) {
+  .component-card-summary .reaction {
+    margin-bottom: 24px;
+  }
+}
+.component-card-summary .reaction .skill {
+  color: hsl(0, 100%, 67%);
+}
+.component-card-summary .reaction .svg-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.component-card-summary .memory {
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto 15px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff4e0;
+}
+@media screen and (min-width: 768px) {
+  .component-card-summary .memory {
+    margin-bottom: 24px;
+  }
+}
+.component-card-summary .memory .skill {
+  color: hsl(39, 100%, 56%);
+}
+.component-card-summary .memory .svg-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.component-card-summary .verbal {
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto 15px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bdfff0;
+}
+@media screen and (min-width: 768px) {
+  .component-card-summary .verbal {
+    margin-bottom: 24px;
+  }
+}
+.component-card-summary .verbal .skill {
+  color: hsl(166, 100%, 37%);
+}
+.component-card-summary .verbal .svg-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.component-card-summary .visual {
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto 15px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e7eafd;
+}
+.component-card-summary .visual .skill {
+  color: hsl(234, 85%, 45%);
+}
+.component-card-summary .visual .svg-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.continue-btn {
+  width: 80%;
+  border: none;
+  color: hsl(221, 100%, 96%);
+  background-color: hsl(224, 30%, 27%);
+  padding: 15px 0;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+@media screen and (min-width: 768px) {
+  .continue-btn {
+    margin-top: 50px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
