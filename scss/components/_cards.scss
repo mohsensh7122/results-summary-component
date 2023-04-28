@@ -7,14 +7,12 @@ body {
 .component-card {
     width: 350px;
     height: 700px;
-    margin: 0px auto;
     position: relative;
 
     @media screen and (min-width: 768px) {
         display: flex;
         width: 800px;
         height: 100%;
-       margin: 100px auto;
     }
 
     // The purple card
